@@ -1,0 +1,26 @@
+## Updates to given solution needed to make this work:
+
+### Update Scripts
+- In the React and ReactDOM scripts, change "/react/" to "/react@18/" and "/react-dom/" to "/react-dom@18/"
+- Update Babel standalone script from "https://unpkg.com/babel-standalone" to "https://unpkg.com/@babel/standalone/babel.min.js"
+
+### Update ReactDOM API in index.js
+
+- ReactDOM.render is no longer supported in React 18, so use  ReactDOM.createRoot instead
+
+    Change:
+
+    ```
+    ReactDOM.render(
+      <App />,
+      document.getElementById("root")
+    );
+    ```
+
+    To:
+
+    ```
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+
+    root.render(<App />);
+    ```
