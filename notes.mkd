@@ -3,7 +3,7 @@
 ### Update Scripts
 - In the React and ReactDOM scripts, change "/react/" to "/react@18/" and "/react-dom/" to "/react-dom@18/"
 - Update Babel standalone script from "https://unpkg.com/babel-standalone" to "https://unpkg.com/@babel/standalone/babel.min.js"
-- Change type of each from "text/jsx" to text/babel"
+- Change type of each component script from "text/jsx" to "text/babel"
 
 ### Update ReactDOM API in index.js
 
